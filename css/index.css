@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.bg {
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.container {
+    width: 100%;
+    height: 360vh;
+    background-color: #000;
+}
+
+.container .slide_one {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .slide_one .header_box {
+    width: 100%;
+    height: 70px;
+}
+
+.container .slide_one .header_box .scroll_effect ul {
+    width: 70%;
+    height: 70px;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    color: #fff;
+    mix-blend-mode: difference;
+    justify-content: space-between;
+}
+
+.container .slide_one .header_box .scroll_effect ul li {
+    width: 90%;
+    color: #fff;
+    font-style: italic;
+    font-size: 2rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.container .slide_one .header_box .scroll_effect ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container .slide_one .header_box .scroll_effect ul li.on a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.container .slide_one:hover .profile_one {
+    right: 70%;
+}
+.container .slide_one:hover .profile_two {
+    bottom: 5%;
+}
+.container .slide_one:hover .profile_three {
+    left: 70%;
+}
+.container .profile_one {
+    width: 20%;
+    height: 45vh;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 50px;
+    transition: all .5s;
+}
+
+.container .profile_two {
+    width: 20%;
+    height: 45vh;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: all .5s;
+
+}
+
+.container .profile_two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.container .profile_three {
+    width: 20%;
+    height: 45vh;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s;
+    line-height: 55px;
+}
+
+.container .profile_three_imgbox {
+    width: 100%;
+    height: 100px;
+}
+
+.container .profile_three_imgbox img {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    object-fit: contain;
+}
+
+.container .profile_three_imgbox img:hover {
+    transform: scale(1.5);
+}
+
+.slide_two {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 100px;
+}
+
+.slide_two .slidesection {
+    width: 80%;
+    margin: 100px auto 0;
+    padding-top: 36%;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all .3s;
+    position: relative;
+}
+
+.slide_two .slidesection iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.slide_two .slidesection:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.slide_three {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: #000;
+}
+
+.slide_three .collection {
+    display: flex;
+    width: 80vw;
+    height: 100%;
+    padding-top: 5vh;
+    padding-left: 10%;
+    margin: 0 auto;
+}
+
+.slide_three .collection li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 70px 40px 0px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all .5s;
+    position: relative;
+}
+
+.slide_three .collection li:hover {
+    opacity: 1;
+}
+
+.slide_three .collection li::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.slide_three .collection li:hover::after {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide_three .collection li .inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    z-index: 10;
+}
+
+.slide_three .collection li .inner .txt {
+    width: 100%;
+}
+
+.slide_three .collection li .inner .txt h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 70px;
+    margin-bottom: 40px;
+    transition: all .5s;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.slide_three .collection li:hover .inner .txt h3 {
+    font-size: 5vw;
+    padding-top: 0;
+}
+
+.slide_three .collection li .inner .txt h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 20px;
+    transition: all .3s;
+}
+
+.slide_three .collection li:hover .inner .txt h3::after {
+    background-color: #fff;
+    width: 120px;
+}
+
+.slide_three .collection li .inner .txt p {
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.slide_three .collection li figure {
+    width: 100%;
+    height: 30%;
+}
+
+.slide_three .collection li figure video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20vh 7vw 14vh 20vw;
+    left: -100vw;
+    transition: all .5s;
+}
+
+.popup.on {
+    left: 0;
+    z-index: 999;
+}
+
+.popup .txt {
+    flex: 0 1 25%;
+    height: 100%;
+}
+
+.popup .txt h2 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.popup .txt p {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+.popup .txt button {
+    font-size: 1.8rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.popup figure {
+    flex: 0 1 70%;
+    height: 100%;
+}
+
+.popup figure video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <!-- 검색엔진, 로봇이 리스트에 들어가도록 허락해주는것 -->
+            <meta name="robots" content="All">
+            <meta name="Yeti" content="index, follow">
+            <meta name="Yeti" content="All">
+            <meta name="googlebot" content="All">
+            <meta name="googlebot" content="index, follow">
+            <meta name="daumoa" content="All">
+            <meta name="daumoa" content="index, follow">
+            <meta name="title" content="영상편집자 - 박진효 포트폴리오">
+            <meta name="description" content="영상편집자 박진효입니다. 포트폴리오 방문을 환영">
+            <meta name="keywords" content="영상편집자, 대구 디자이너">
+            <meta name="author" content="박진효">
+            <meta name="content-language" content="kr">
+            <meta property="og:type" content="website">
+            <meta property="og:site_name" content="character">
+            <meta property="og:title" content="Ronaldinho의 포트폴리오">
+            <meta property="og:description" content="나보다 못생긴 OO">
+            <meta property="og:image" content="images/boy.jfif">
+            <meta property="og:image:width" content="400">
+            <meta property="og:image:height" content="300">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/one.js"></script>
+    <script src="js/two.js"></script>
+    <script src="https://kit.fontawesome.com/580351c268.js" crossorigin="anonymous"></script>
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="container">
+        <div class="slide_one">
+            <div class="header_box">
+                <div class="scroll_effect">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT ME</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="profile_one">
+                <h1>인적사항</h1>
+                <h3>1992.10. 포항 출생</h3>
+                <h3>2008.2. 청구중 졸업</h3>
+                <h3>2011.2. 청구고 졸업</h3>
+                <h3>2017.2. 계명대 졸업</h3>
+                <h3>2017.5. 계명대 근무</h3>
+                <h3>2020.8. 창업지원단 근무</h3>
+            </div>
+            <div class="profile_two">
+                <img src="image/001.jpg" alt="self">
+            </div>
+            <div class="profile_three">
+                <div class="res">   
+                    <h1>Profile</h1>
+                    <h3>Name: 박진효</h3>
+                    <h3>Email: oneshot119@nate.com</h3>
+                    <h3>HP: 010-9989-9210</h3>
+                </div>
+                <div class="res">
+                    <h1>SNS</h1>
+                    <div class="profile_three_imgbox">
+                        <a href="https://instagram.com/zinyolo/" target="_blank"><img src="image/insta.png"
+                                alt="insta"></a>
+                        <a href="https://www.facebook.com/people/Park-JinHyo/pfbid02d19Ld4DuoRb2dTkxREGd17JASKHp6g716fpMK3sSGC7GzUXNF8KaD3EJEH5kvBMEl/"
+                            target="_blank"><img src="image/facebook.png" alt="facebook"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide_two">
+            <div class="slidesection">
+                <iframe src="https://www.youtube.com/embed/koCytQkK76s?si=A7Gu4g0e3z9W_UBx"
+                    title="YouTube video player"></iframe>
+            </div>
+        </div>
+        <div class="slide_three">
+            <ul class="collection">
+                <li>
+                    <div class="inner">
+                        <div class="txt">
+                            <h3>01</h3>
+                            <p>Typographics</p>
+                        </div>
+                        <figure>
+                            <video src="video/vid1.mp4" loop muted></video>
+                        </figure>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="txt">
+                            <h3>02</h3>
+                            <p>Character animation</p>
+                        </div>
+
+                        <figure>
+                            <video src="video/vid2.mp4" loop muted></video>
+                        </figure>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="txt">
+                            <h3>03</h3>
+                            <p>Expression</p>
+                        </div>
+                        <figure>
+                            <video src="video/vid3.mp4" loop muted></video>
+                        </figure>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="txt">
+                            <h3>04</h3>
+                            <p>Cut edit</p>
+                        </div>
+                        <figure>
+                            <video src="video/vid4.mp4" loop muted></video>
+                        </figure>
+                    </div>
+                </li>
+            </ul>
+            <div class="popup">
+                <div class="txt">
+                    <h2>01</h2>
+                    <p>project</p>
+                    <button>CLOSE</button>
+                </div>
+                <figure>
+                    <video src="video (2)/vid1.mp4" loop muted></video>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <script>
+        VANTA.CLOUDS({
+            el: ".bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            skyColor: 0xd0d11,
+            cloudColor: 0x869bd2,
+            cloudShadowColor: 0xf2f2f2,
+            sunColor: 0xcacaca,
+            sunGlareColor: 0xc2c8fa,
+            speed: 2.0
+        })
+
+    </script>
+</body>
+
+</html>
