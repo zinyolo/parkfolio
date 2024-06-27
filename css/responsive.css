@@ -86,10 +86,13 @@
     .container .profile_one {
         top: 45%;
         right: 5% !important;
+        line-height: 40px;
     }
 
     .container .profile_one h1 {
         font-size: 1.4rem;
+        line-height: 45px;
+        
     }
 
     .container .profile_two {
@@ -98,12 +101,15 @@
 
     .container .profile_three h1 {
         font-size: 1.5rem;
+        margin: 0;
+        line-height: 45px;
     }
+
 
     .container .slide_one .profile_three {
         flex-wrap: wrap;
         width: 90%;
-        height: 30vh;
+        height: 32vh;
         left: 5% !important;
     }
 
